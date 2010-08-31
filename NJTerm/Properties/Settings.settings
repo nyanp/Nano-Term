@@ -1,0 +1,138 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="NanoTerm.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="MAX_UPDATE_FREQ" Type="System.TimeSpan" Scope="User">
+      <Value Profile="(Default)">00:00:00.0010000</Value>
+    </Setting>
+    <Setting Name="BAUD_RATE" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">115200</Value>
+    </Setting>
+    <Setting Name="MAX_PORT_NUMBER" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">40</Value>
+    </Setting>
+    <Setting Name="RETURN_CODE" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\r</Value>
+    </Setting>
+    <Setting Name="THREAD_RECONNECT_INTERVAL" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1000</Value>
+    </Setting>
+    <Setting Name="THREAD_SAVELOG_INTERVAL" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">3000</Value>
+    </Setting>
+    <Setting Name="THREAD_DRAWGRAPH_INTERVAL" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1000</Value>
+    </Setting>
+    <Setting Name="AUTO_RECONNECT" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="AUTO_CONNECT" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="AUTO_SAVE" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="SEND_AT_ONCE" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="TX_TIMESTAMP" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="RX_TIMESTAMP" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="TIMESTAMP_SPAN" Type="System.TimeSpan" Scope="User">
+      <Value Profile="(Default)">00:00:01</Value>
+    </Setting>
+    <Setting Name="TIMESTAMP_FORMAT" Type="System.String" Scope="User">
+      <Value Profile="(Default)">yyyy/MM/dd HH:mm:ss</Value>
+    </Setting>
+    <Setting Name="Setting" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">0, 0</Value>
+    </Setting>
+    <Setting Name="SAVE_PATH" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="SERIAL_PARITY" Type="System.IO.Ports.Parity" Scope="User">
+      <Value Profile="(Default)">None</Value>
+    </Setting>
+    <Setting Name="SERIAL_STOPBITS" Type="System.IO.Ports.StopBits" Scope="User">
+      <Value Profile="(Default)">One</Value>
+    </Setting>
+    <Setting Name="AUTO_CONNECT_FORMOPENING" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="SERIAL_HANDSHAKE" Type="System.IO.Ports.Handshake" Scope="User">
+      <Value Profile="(Default)">None</Value>
+    </Setting>
+    <Setting Name="SERIAL_DTR_ENABLE" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="SERIAL_DATABITS" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">8</Value>
+    </Setting>
+    <Setting Name="FORM_WIDTH" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">808</Value>
+    </Setting>
+    <Setting Name="FORM_HEIGHT" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">686</Value>
+    </Setting>
+    <Setting Name="FORM_WINDOWSTATE" Type="System.Windows.Forms.FormWindowState" Scope="User">
+      <Value Profile="(Default)">Normal</Value>
+    </Setting>
+    <Setting Name="SEND_FILE_PATH" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="REMOVE_EMPTY_LOG" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="TIMESTAMP_LINEHEAD" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="TX_SHOW" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="RX_SHOW" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="BINARY_SHOW" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="NEWPORT_BAUDRATE" Type="System.String" Scope="User">
+      <Value Profile="(Default)">115200</Value>
+    </Setting>
+    <Setting Name="NEWPORT_DATABITS" Type="System.String" Scope="User">
+      <Value Profile="(Default)">8 bit</Value>
+    </Setting>
+    <Setting Name="NEWPORT_PARITY" Type="System.String" Scope="User">
+      <Value Profile="(Default)">なし</Value>
+    </Setting>
+    <Setting Name="NEWPORT_STOPBITS" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="NEWPORT_HANDSHAKE" Type="System.String" Scope="User">
+      <Value Profile="(Default)">なし</Value>
+    </Setting>
+    <Setting Name="NEWPORT_SAVEDIRECTORY" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="NEWPORT_SAVETX" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="NEWPORT_SAVERX" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="NEWPORT_TXSHOW" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="NEWPORT_RXSHOW" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="NEWPORT_BINARYSHOW" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="NEWPORT_LOGENABLE" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

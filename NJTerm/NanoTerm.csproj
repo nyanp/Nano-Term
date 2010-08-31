@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7A06BA4C-AAD0-4DB8-9233-F54C9CFA6C4D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NanoTerm</RootNamespace>
+    <AssemblyName>NanoTerm</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>chart.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ZedGraph, Version=5.1.5.28844, Culture=neutral, PublicKeyToken=02a83cbd123fcd60, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\デスクトップ\My Dropbox\StarImageGenerator3\ZedGraph.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FileSender.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FileSender.Designer.cs">
+      <DependentUpon>FileSender.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GraphSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GraphSettings.Designer.cs">
+      <DependentUpon>GraphSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlotSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PlotSettings.Designer.cs">
+      <DependentUpon>PlotSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PortChangeDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PortChangeDialog.Designer.cs">
+      <DependentUpon>PortChangeDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlotSettings.resx">
+      <DependentUpon>PlotSettings.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PortChangeDialog.resx">
+      <DependentUpon>PortChangeDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setting.resx">
+      <DependentUpon>Setting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <EmbeddedResource Include="help.chm">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SeriesWizard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SeriesWizard.Designer.cs">
+      <DependentUpon>SeriesWizard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Setting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setting.Designer.cs">
+      <DependentUpon>Setting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.cs" />
+    <Compile Include="SetUpSerialPort.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetUpSerialPort.Designer.cs">
+      <DependentUpon>SetUpSerialPort.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VersionInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VersionInfo.Designer.cs">
+      <DependentUpon>VersionInfo.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="chart.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="FileSender.resx">
+      <DependentUpon>FileSender.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GraphSettings.resx">
+      <DependentUpon>GraphSettings.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\buttonbase.bmp" />
+    <Content Include="Images\chart_add.ico" />
+    <Content Include="Images\floppy_disc.ico" />
+    <Content Include="Images\menuIcons\chart_add.png" />
+    <Content Include="Images\menuIcons\floppy_disc.png" />
+    <Content Include="Images\menuIcons\help.png" />
+    <Content Include="Images\menuIcons\notebook.png" />
+    <Content Include="Images\menuIcons\processes.png" />
+    <Content Include="Images\menuIcons\remove.png" />
+    <Content Include="Images\menuIcons\windows.png" />
+    <Content Include="Images\menuIcons\window_accept.png" />
+    <Content Include="Images\processes.ico" />
+    <Content Include="Images\remove.ico" />
+    <EmbeddedResource Include="Images\columnL.BMP" />
+    <EmbeddedResource Include="Images\fastlineL.BMP" />
+    <EmbeddedResource Include="Images\lineL.BMP" />
+    <EmbeddedResource Include="Images\pointL.BMP" />
+    <EmbeddedResource Include="Images\splineL.BMP" />
+    <EmbeddedResource Include="Images\fastline.BMP" />
+    <EmbeddedResource Include="Images\column.BMP">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\line.BMP">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\point.BMP">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\spline.BMP">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\stepline.BMP">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SeriesWizard.resx">
+      <DependentUpon>SeriesWizard.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetUpSerialPort.resx">
+      <DependentUpon>SetUpSerialPort.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VersionInfo.resx">
+      <DependentUpon>VersionInfo.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows インストーラー 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
